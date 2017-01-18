@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     
     
     // MARK: - Model
-    internal var model = [String]() {
+    internal var model = [CellModel]() {
         didSet {
             DispatchQueue.main.async {
                 self.tableView?.reloadData()
@@ -22,10 +22,12 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - View
-    internal weak var tableView: UITableView?
+    internal var tableView: UITableView?
     
     // MARK: - Constants
     internal struct Constants {
-        static let cellId = "OneTableViewCell"
+        static let cellId = "PhotoTableViewCell"
+        static let estRowHeight: CGFloat = 160
+        static let fetchUrl = "https://jsonplaceholder.typicode.com/photos/?albumId=1"
     }
 }

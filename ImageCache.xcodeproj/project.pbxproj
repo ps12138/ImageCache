@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104B4A611E2F0F6F00F315DB /* homeIcon_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */; };
+		104B4A631E2F192B00F315DB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4A621E2F192B00F315DB /* CellModel.swift */; };
 		107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE2F01E2D931E00C16F46 /* AppDelegate.swift */; };
 		107DE2F61E2D931E00C16F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F41E2D931E00C16F46 /* Main.storyboard */; };
 		107DE2F81E2D931E00C16F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F71E2D931E00C16F46 /* Assets.xcassets */; };
@@ -21,6 +23,10 @@
 		107DE3341E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3331E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift */; };
 		107DE3361E2EEEF100C16F46 /* MainViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3351E2EEEF100C16F46 /* MainViewController+Delegate.swift */; };
 		107DE3381E2EEF0200C16F46 /* MainViewController+InternalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3371E2EEF0200C16F46 /* MainViewController+InternalMethods.swift */; };
+		107DE33A1E2EF41F00C16F46 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3391E2EF41F00C16F46 /* HttpTools.swift */; };
+		108EC6D21E2EFD8C009AA124 /* Reformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108EC6D11E2EFD8C009AA124 /* Reformer.swift */; };
+		108EC6D61E2F026D009AA124 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108EC6D41E2F026D009AA124 /* PhotoTableViewCell.swift */; };
+		108EC6D71E2F026D009AA124 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon_unselected.png; sourceTree = "<group>"; };
+		104B4A621E2F192B00F315DB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		107DE2ED1E2D931E00C16F46 /* ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107DE2F01E2D931E00C16F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107DE2F51E2D931E00C16F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,10 @@
 		107DE3331E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+LifeCycle.swift"; sourceTree = "<group>"; };
 		107DE3351E2EEEF100C16F46 /* MainViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Delegate.swift"; sourceTree = "<group>"; };
 		107DE3371E2EEF0200C16F46 /* MainViewController+InternalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+InternalMethods.swift"; sourceTree = "<group>"; };
+		107DE3391E2EF41F00C16F46 /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
+		108EC6D11E2EFD8C009AA124 /* Reformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reformer.swift; sourceTree = "<group>"; };
+		108EC6D41E2F026D009AA124 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,7 @@
 				107DE2F71E2D931E00C16F46 /* Assets.xcassets */,
 				107DE2F91E2D931E00C16F46 /* LaunchScreen.storyboard */,
 				107DE2FC1E2D931E00C16F46 /* Info.plist */,
+				104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,6 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				107DE3241E2ED58100C16F46 /* DwOperation.swift */,
+				107DE3391E2EF41F00C16F46 /* HttpTools.swift */,
+				108EC6D11E2EFD8C009AA124 /* Reformer.swift */,
+				104B4A621E2F192B00F315DB /* CellModel.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -178,12 +194,22 @@
 		107DE32C1E2EEE6200C16F46 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				108EC6D31E2F0236009AA124 /* View */,
 				107DE32F1E2EEEBD00C16F46 /* MainViewController.swift */,
 				107DE3331E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift */,
 				107DE3351E2EEEF100C16F46 /* MainViewController+Delegate.swift */,
 				107DE3371E2EEF0200C16F46 /* MainViewController+InternalMethods.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		108EC6D31E2F0236009AA124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				108EC6D41E2F026D009AA124 /* PhotoTableViewCell.swift */,
+				108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +280,7 @@
 				TargetAttributes = {
 					107DE2EC1E2D931E00C16F46 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UE4HZRGDJ7;
 						ProvisioningStyle = Automatic;
 					};
 					107DE3001E2D931E00C16F46 = {
@@ -293,6 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104B4A611E2F0F6F00F315DB /* homeIcon_unselected.png in Resources */,
+				108EC6D71E2F026D009AA124 /* PhotoTableViewCell.xib in Resources */,
 				107DE2FB1E2D931E00C16F46 /* LaunchScreen.storyboard in Resources */,
 				107DE2F81E2D931E00C16F46 /* Assets.xcassets in Resources */,
 				107DE2F61E2D931E00C16F46 /* Main.storyboard in Resources */,
@@ -321,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				107DE32A1E2EDF3300C16F46 /* UIImageView+downlaod.swift in Sources */,
+				107DE33A1E2EF41F00C16F46 /* HttpTools.swift in Sources */,
 				107DE3281E2EDD9D00C16F46 /* ImageCacheManager+PublicMethods.swift in Sources */,
 				107DE3361E2EEEF100C16F46 /* MainViewController+Delegate.swift in Sources */,
 				107DE3231E2ECEE500C16F46 /* ImageCacheManager.swift in Sources */,
@@ -328,7 +358,10 @@
 				107DE3251E2ED58100C16F46 /* DwOperation.swift in Sources */,
 				107DE3381E2EEF0200C16F46 /* MainViewController+InternalMethods.swift in Sources */,
 				107DE3341E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift in Sources */,
+				108EC6D61E2F026D009AA124 /* PhotoTableViewCell.swift in Sources */,
+				104B4A631E2F192B00F315DB /* CellModel.swift in Sources */,
 				107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */,
+				108EC6D21E2EFD8C009AA124 /* Reformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +511,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PSL.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,7 +525,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PSL.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,6 +608,7 @@
 				107DE3171E2D931E00C16F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		107DE3181E2D931E00C16F46 /* Build configuration list for PBXNativeTarget "ImageCacheTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +617,7 @@
 				107DE31A1E2D931E00C16F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		107DE31B1E2D931E00C16F46 /* Build configuration list for PBXNativeTarget "ImageCacheUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +626,7 @@
 				107DE31D1E2D931E00C16F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

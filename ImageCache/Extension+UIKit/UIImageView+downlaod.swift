@@ -38,21 +38,25 @@ extension UIImageView {
     
     /// download
     public func download(imageFrom urlStr: String,
-                              placeHolder: UIImage? = nil) {
-        self.image = placeHolder
+                              placeHolder: String? = nil) {
+        
+        if let placeHolder = placeHolder {
+            self.image = UIImage(named: placeHolder)
+        } else {
+            self.image = nil
+        }
         self.lastUrlStr = urlStr
         ImageCacheManager.shared.download(imageFrom: urlStr) {
             (newImage, url) in
             
             if let validLastUrlStr = self.lastUrlStr,
                 validLastUrlStr != url {
-                print("ImCacheMan: \(validLastUrlStr)")
+                print("ImCacheMan: ignore \(validLastUrlStr)")
                 return
             }
             DispatchQueue.main.async {
                 self.image = newImage
             }
-            
         }
     }
 }

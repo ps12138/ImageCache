@@ -13,6 +13,9 @@ extension MainViewController {
     ///
     override func viewDidLoad() {
         super.viewDidLoad()
+        initNavController()
+        initTableView(superView: self.view)
+        fetch(testJsonFrom: Constants.fetchUrl)
     }
     
     ///
@@ -22,7 +25,7 @@ extension MainViewController {
     
     /// 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(anumated)
+        super.viewWillAppear(animated)
     }
     
     ///

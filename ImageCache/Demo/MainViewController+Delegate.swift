@@ -30,7 +30,10 @@ extension MainViewController: UITableViewDataSource {
     ///
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellId)
-        
-        return UITableViewCell()
+        guard let photoCell = cell as? PhotoTableViewCell else {
+            return UITableViewCell()
+        }
+        photoCell.model = model[indexPath.row]
+        return photoCell
     }
 }
