@@ -20,22 +20,25 @@ extension ImageCacheManager {
             - UIImage: downloaded iamge
             - String: download from url string
     */
-    func download(imageFrom urlStr: String,
+    public func download(imageFrom urlStr: String,
                   completion: @escaping (UIImage, String)->()
         ) {
         
         let urlStr = urlStr as NSString
+        
         // if urlStr is currently downloading
         if let _ = curOperations.object(forKey: urlStr){
-            print("Cache: loading")
+            print("ImageCache.M: loading")
             return
         }
+        
         // if urlStr is in the inMemCache
         if let newImage = inMemCache.object(forKey: urlStr) {
-            //print("Cache: cached")
+            print("ImageCache.M: cached")
             completion(newImage, urlStr as String)
             return
         }
+        
         // we will begin a task into operation queue
         let task = DwOperation()
         curOperations.setObject(task, forKey: urlStr)
@@ -50,11 +53,20 @@ extension ImageCacheManager {
             }
         }
         operationQueue.addOperation(task)
-        
+    }
+    
+    /// setting maxCount
+    public func set(maxCount count: Int) {
+        inMemCache.countLimit = count
+    }
+    
+    /// setting maxCost
+    public func set(maxCost cost: Int) {
+        inMemCache.totalCostLimit = cost
     }
     
     /// clear in mem cache
-    func clearInMemCache() {
+    public func clearInMemCache() {
         inMemCache.removeAllObjects()
     }
 

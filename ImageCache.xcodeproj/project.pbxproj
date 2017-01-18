@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		104B4A611E2F0F6F00F315DB /* homeIcon_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */; };
 		104B4A631E2F192B00F315DB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4A621E2F192B00F315DB /* CellModel.swift */; };
+		104B4A671E2F31C100F315DB /* ImageCacheManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */; };
 		107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE2F01E2D931E00C16F46 /* AppDelegate.swift */; };
 		107DE2F61E2D931E00C16F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F41E2D931E00C16F46 /* Main.storyboard */; };
 		107DE2F81E2D931E00C16F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F71E2D931E00C16F46 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon_unselected.png; sourceTree = "<group>"; };
 		104B4A621E2F192B00F315DB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageCacheManager+Delegate.swift"; sourceTree = "<group>"; };
 		107DE2ED1E2D931E00C16F46 /* ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107DE2F01E2D931E00C16F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107DE2F51E2D931E00C16F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				107DE3221E2ECEE500C16F46 /* ImageCacheManager.swift */,
+				104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */,
 				107DE3271E2EDD9D00C16F46 /* ImageCacheManager+PublicMethods.swift */,
 			);
 			path = CacheManager;
@@ -360,6 +363,7 @@
 				107DE3341E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift in Sources */,
 				108EC6D61E2F026D009AA124 /* PhotoTableViewCell.swift in Sources */,
 				104B4A631E2F192B00F315DB /* CellModel.swift in Sources */,
+				104B4A671E2F31C100F315DB /* ImageCacheManager+Delegate.swift in Sources */,
 				107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */,
 				108EC6D21E2EFD8C009AA124 /* Reformer.swift in Sources */,
 			);
@@ -513,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PSL.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PSL.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
