@@ -5,6 +5,6 @@
 - [x] thread-safe in Memory Cache
 - [x] OperationQueue & Operation Cache and avoiding dup download
 - [x] Singleton cache manager
-- [x] Extension UIImageView with last url for avoiding false loading
+- [x] Extension UIImageView with last url to avoid false loading
 - [ ] Independent extension namespace for UIImageView
 - [ ] Integrated RealmSwift as the persistence storage
