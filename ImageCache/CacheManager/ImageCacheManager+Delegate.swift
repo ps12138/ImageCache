@@ -11,6 +11,9 @@ import UIKit
 
 extension ImageCacheManager: NSCacheDelegate {
     public func cache(_ cache: NSCache<AnyObject, AnyObject>, willEvictObject obj: Any) {
-        print("ImageCache.M: remove obj")
+        print("ImageCache.M: inMem remove obj")
+        if let model = obj as? InMemImageModel {
+            inDiskCache.setObject(model.image, forKey: model.urlStr)
+        }
     }
 }

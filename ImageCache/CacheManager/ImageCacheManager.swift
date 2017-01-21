@@ -13,18 +13,24 @@ public class ImageCacheManager: NSObject {
     // MARK: - Sinpleton
     private override init() {
         super.init()
-        inMemCache.countLimit = maxSize
+        inMemCache.countLimit = inMemSize
         inMemCache.evictsObjectsWithDiscardedContent = true
         inMemCache.delegate = self
+        
+        inDiskCache.countLimit = inDiskSize
+        inDiskCache.evictsObjectsWithDiscardedContent = true
     }
     static let shared = ImageCacheManager()
     
     // MARK: - Proterties
-    internal let maxSize = 30
-    //internal let maxCost = 30000
-    internal let inMemCache = NSCache<NSString, UIImage>()
+    internal let inMemSize = 10
+    internal let inDiskSize = 10
+    
+    // MARK: - Operation control
     internal let curOperations = NSCache<NSString, Operation>()
     internal let operationQueue = OperationQueue()
     
-    // MARK: - Cache Strategy
+    // MARK: - Cache
+    internal let inMemCache = NSCache<NSString, InMemImageModel>()
+    internal let inDiskCache = RealmCache()
 }

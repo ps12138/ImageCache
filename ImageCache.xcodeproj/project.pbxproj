@@ -25,9 +25,14 @@
 		107DE3361E2EEEF100C16F46 /* MainViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3351E2EEEF100C16F46 /* MainViewController+Delegate.swift */; };
 		107DE3381E2EEF0200C16F46 /* MainViewController+InternalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3371E2EEF0200C16F46 /* MainViewController+InternalMethods.swift */; };
 		107DE33A1E2EF41F00C16F46 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE3391E2EF41F00C16F46 /* HttpTools.swift */; };
+		108397431E32B1DD00ED91C5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108397421E32B1DD00ED91C5 /* RealmManager.swift */; };
+		108397451E32C94300ED91C5 /* RealmManager+PublicMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108397441E32C94300ED91C5 /* RealmManager+PublicMethods.swift */; };
+		1083974A1E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108397491E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift */; };
+		1083974C1E32DE3100ED91C5 /* InMemImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1083974B1E32DE3100ED91C5 /* InMemImageModel.swift */; };
 		108EC6D21E2EFD8C009AA124 /* Reformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108EC6D11E2EFD8C009AA124 /* Reformer.swift */; };
 		108EC6D61E2F026D009AA124 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108EC6D41E2F026D009AA124 /* PhotoTableViewCell.swift */; };
 		108EC6D71E2F026D009AA124 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */; };
+		10BAAAED1E3295E200AA5CC1 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BAAAEC1E3295E200AA5CC1 /* ImageModel.swift */; };
 		E2BD6CFF57DE9495C2A8EB05 /* Pods_ImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8E5A3234E340F9BF00A7FB /* Pods_ImageCache.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,9 +78,14 @@
 		107DE3351E2EEEF100C16F46 /* MainViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Delegate.swift"; sourceTree = "<group>"; };
 		107DE3371E2EEF0200C16F46 /* MainViewController+InternalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+InternalMethods.swift"; sourceTree = "<group>"; };
 		107DE3391E2EF41F00C16F46 /* HttpTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
+		108397421E32B1DD00ED91C5 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		108397441E32C94300ED91C5 /* RealmManager+PublicMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RealmManager+PublicMethods.swift"; sourceTree = "<group>"; };
+		108397491E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RealmManager+InternalMethods.swift"; sourceTree = "<group>"; };
+		1083974B1E32DE3100ED91C5 /* InMemImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemImageModel.swift; sourceTree = "<group>"; };
 		108EC6D11E2EFD8C009AA124 /* Reformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reformer.swift; sourceTree = "<group>"; };
 		108EC6D41E2F026D009AA124 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		10BAAAEC1E3295E200AA5CC1 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		5702D2ED7AC74A9E34E18530 /* Pods-ImageCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCache.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageCache/Pods-ImageCache.release.xcconfig"; sourceTree = "<group>"; };
 		7A8E5A3234E340F9BF00A7FB /* Pods_ImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A90C76E3BADD7DB56BE689B /* Pods-ImageCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCache.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageCache/Pods-ImageCache.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +185,8 @@
 		107DE31F1E2D954300C16F46 /* CacheManager */ = {
 			isa = PBXGroup;
 			children = (
+				108397481E32D02600ED91C5 /* InMemCache */,
+				10BAAAEB1E3295CA00AA5CC1 /* RealmSwift */,
 				107DE3221E2ECEE500C16F46 /* ImageCacheManager.swift */,
 				104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */,
 				107DE3271E2EDD9D00C16F46 /* ImageCacheManager+PublicMethods.swift */,
@@ -213,6 +225,14 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		108397481E32D02600ED91C5 /* InMemCache */ = {
+			isa = PBXGroup;
+			children = (
+				1083974B1E32DE3100ED91C5 /* InMemImageModel.swift */,
+			);
+			path = InMemCache;
+			sourceTree = "<group>";
+		};
 		108EC6D31E2F0236009AA124 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +240,17 @@
 				108EC6D51E2F026D009AA124 /* PhotoTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		10BAAAEB1E3295CA00AA5CC1 /* RealmSwift */ = {
+			isa = PBXGroup;
+			children = (
+				10BAAAEC1E3295E200AA5CC1 /* ImageModel.swift */,
+				108397421E32B1DD00ED91C5 /* RealmManager.swift */,
+				108397441E32C94300ED91C5 /* RealmManager+PublicMethods.swift */,
+				108397491E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift */,
+			);
+			path = RealmSwift;
 			sourceTree = "<group>";
 		};
 		4DEE732DE6FA396B66498099 /* Frameworks */ = {
@@ -428,18 +459,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				107DE32A1E2EDF3300C16F46 /* UIImageView+downlaod.swift in Sources */,
+				10BAAAED1E3295E200AA5CC1 /* ImageModel.swift in Sources */,
+				108397451E32C94300ED91C5 /* RealmManager+PublicMethods.swift in Sources */,
 				107DE33A1E2EF41F00C16F46 /* HttpTools.swift in Sources */,
 				107DE3281E2EDD9D00C16F46 /* ImageCacheManager+PublicMethods.swift in Sources */,
 				107DE3361E2EEEF100C16F46 /* MainViewController+Delegate.swift in Sources */,
 				107DE3231E2ECEE500C16F46 /* ImageCacheManager.swift in Sources */,
+				1083974A1E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift in Sources */,
 				107DE3311E2EEEBD00C16F46 /* MainViewController.swift in Sources */,
 				107DE3251E2ED58100C16F46 /* DwOperation.swift in Sources */,
 				107DE3381E2EEF0200C16F46 /* MainViewController+InternalMethods.swift in Sources */,
+				108397431E32B1DD00ED91C5 /* RealmManager.swift in Sources */,
 				107DE3341E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift in Sources */,
 				108EC6D61E2F026D009AA124 /* PhotoTableViewCell.swift in Sources */,
 				104B4A631E2F192B00F315DB /* CellModel.swift in Sources */,
 				104B4A671E2F31C100F315DB /* ImageCacheManager+Delegate.swift in Sources */,
 				107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */,
+				1083974C1E32DE3100ED91C5 /* InMemImageModel.swift in Sources */,
 				108EC6D21E2EFD8C009AA124 /* Reformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A90C76E3BADD7DB56BE689B /* Pods-ImageCache.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;
@@ -605,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5702D2ED7AC74A9E34E18530 /* Pods-ImageCache.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UE4HZRGDJ7;
 				INFOPLIST_FILE = ImageCache/Info.plist;

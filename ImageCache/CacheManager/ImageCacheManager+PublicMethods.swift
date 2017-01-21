@@ -33,11 +33,21 @@ extension ImageCacheManager {
         }
         
         // if urlStr is in the inMemCache
-        if let newImage = inMemCache.object(forKey: urlStr) {
-            print("ImageCache.M: cached")
+        if let model = inMemCache.object(forKey: urlStr) {
+            print("ImageCache.M: inMem cached")
+            completion(model.image, urlStr as String)
+            return
+        }
+
+        // if urlStr is in the inDiskCache
+        if let newImage = inDiskCache.object(forKey: urlStr) {
+            print("ImageCache.M: inDisk cached")
             completion(newImage, urlStr as String)
             return
         }
+        
+        
+        
         
         // we will begin a task into operation queue
         let task = DwOperation()
@@ -47,27 +57,42 @@ extension ImageCacheManager {
         task.completionBlock = {
             if let newImage = weakTask?.downloadedImage,
                 let validUrlStr = weakTask?.urlStr {
-                self.inMemCache.setObject(newImage, forKey: validUrlStr)
+                //self.inMemCache.setObject(newImage, forKey: validUrlStr)
+                self.inMemCache.setObject(
+                    InMemImageModel(urlStr: validUrlStr, image: newImage),
+                    forKey: validUrlStr)
+                //self.inDiskCache.setObject(newImage, forKey: validUrlStr)
                 self.curOperations.removeObject(forKey: validUrlStr)
+                print("ImageCache.M: inMem")
                 completion(newImage, validUrlStr as String)
             }
         }
         operationQueue.addOperation(task)
     }
     
-    /// setting maxCount
-    public func set(maxCount count: Int) {
+    /// setting inMem maxCount
+    public func set(inMemCount count: Int) {
         inMemCache.countLimit = count
     }
     
-    /// setting maxCost
-    public func set(maxCost cost: Int) {
+    /// setting inMem maxCost
+    public func set(inMemCost cost: Int) {
         inMemCache.totalCostLimit = cost
+    }
+    
+    /// setting inMem maxCount
+    public func set(inDiskCount count: Int) {
+        inDiskCache.countLimit = count
     }
     
     /// clear in mem cache
     public func clearInMemCache() {
         inMemCache.removeAllObjects()
+    }
+    
+    /// clear disk cache
+    public func clearInDiskCache() {
+        inDiskCache.removeAllObjects()
     }
 
 }
