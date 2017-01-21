@@ -13,7 +13,7 @@ import UIKit
 extension UIImageView {
     
     /// accociatedkeys for extension properties
-    internal struct AssociatedKeys {
+    fileprivate struct AssociatedKeys {
         static var lastUrlStr: String?
     }
     /// last url for downloading
@@ -25,7 +25,7 @@ extension UIImageView {
             if let newValue = newValue {
                 objc_setAssociatedObject(self, &AssociatedKeys.lastUrlStr,
                     newValue as String?,
-                    objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
         }
     }

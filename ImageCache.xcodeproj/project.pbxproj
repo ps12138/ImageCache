@@ -10,6 +10,8 @@
 		104B4A611E2F0F6F00F315DB /* homeIcon_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */; };
 		104B4A631E2F192B00F315DB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4A621E2F192B00F315DB /* CellModel.swift */; };
 		104B4A671E2F31C100F315DB /* ImageCacheManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */; };
+		1072882B1E3414EE00FF1FCD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072882A1E3414EE00FF1FCD /* ImageCache.swift */; };
+		1072882D1E3417F900FF1FCD /* UIImageView+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1072882C1E3417F900FF1FCD /* UIImageView+ImageCache.swift */; };
 		107DE2F11E2D931E00C16F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107DE2F01E2D931E00C16F46 /* AppDelegate.swift */; };
 		107DE2F61E2D931E00C16F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F41E2D931E00C16F46 /* Main.storyboard */; };
 		107DE2F81E2D931E00C16F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107DE2F71E2D931E00C16F46 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		104B4A601E2F0F6F00F315DB /* homeIcon_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeIcon_unselected.png; sourceTree = "<group>"; };
 		104B4A621E2F192B00F315DB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageCacheManager+Delegate.swift"; sourceTree = "<group>"; };
+		1072882A1E3414EE00FF1FCD /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1072882C1E3417F900FF1FCD /* UIImageView+ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageCache.swift"; sourceTree = "<group>"; };
 		107DE2ED1E2D931E00C16F46 /* ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107DE2F01E2D931E00C16F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107DE2F51E2D931E00C16F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 			children = (
 				108397481E32D02600ED91C5 /* InMemCache */,
 				10BAAAEB1E3295CA00AA5CC1 /* RealmSwift */,
+				1072882A1E3414EE00FF1FCD /* ImageCache.swift */,
 				107DE3221E2ECEE500C16F46 /* ImageCacheManager.swift */,
 				104B4A661E2F31C100F315DB /* ImageCacheManager+Delegate.swift */,
 				107DE3271E2EDD9D00C16F46 /* ImageCacheManager+PublicMethods.swift */,
@@ -198,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				107DE3291E2EDF3300C16F46 /* UIImageView+downlaod.swift */,
+				1072882C1E3417F900FF1FCD /* UIImageView+ImageCache.swift */,
 			);
 			path = "Extension+UIKit";
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1072882D1E3417F900FF1FCD /* UIImageView+ImageCache.swift in Sources */,
 				107DE32A1E2EDF3300C16F46 /* UIImageView+downlaod.swift in Sources */,
 				10BAAAED1E3295E200AA5CC1 /* ImageModel.swift in Sources */,
 				108397451E32C94300ED91C5 /* RealmManager+PublicMethods.swift in Sources */,
@@ -468,6 +475,7 @@
 				1083974A1E32DC3C00ED91C5 /* RealmManager+InternalMethods.swift in Sources */,
 				107DE3311E2EEEBD00C16F46 /* MainViewController.swift in Sources */,
 				107DE3251E2ED58100C16F46 /* DwOperation.swift in Sources */,
+				1072882B1E3414EE00FF1FCD /* ImageCache.swift in Sources */,
 				107DE3381E2EEF0200C16F46 /* MainViewController+InternalMethods.swift in Sources */,
 				108397431E32B1DD00ED91C5 /* RealmManager.swift in Sources */,
 				107DE3341E2EEEDF00C16F46 /* MainViewController+LifeCycle.swift in Sources */,

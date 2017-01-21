@@ -41,7 +41,8 @@ class PhotoTableViewCell: UITableViewCell {
         guard let model = model else {
             return
         }
-        photoImageView.download(imageFrom: model.url, placeHolder: "homeIcon_unselected.png")
+//        photoImageView.download(imageFrom: model.url, placeHolder: "homeIcon_unselected.png")
+        photoImageView.ic.download(imageFrom: model.url, placeHolder: "homeIcon_unselected.png")
         alumbidLabel.text = String(model.albumId)
         idLabel.text = String(model.id)
         titleLabel.text = model.title
