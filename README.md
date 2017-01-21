@@ -2,7 +2,9 @@
 
 #### based on Swift 3 and Xcode 8.2
 
-#### thread-safe in Memory Cache
-#### OperationQueue & Operation Cache and avoiding dup download
-#### Singleton cache manager
-#### Extension UIImageView and avoiding false loading
+- [x] thread-safe in Memory Cache
+- [x] OperationQueue & Operation Cache and avoiding dup download
+- [x] Singleton cache manager
+- [x] Extension UIImageView with last url to avoid false loading
+- [ ] Independent extension namespace for UIImageView
+- [ ] Integrated RealmSwift as the persistence storage
