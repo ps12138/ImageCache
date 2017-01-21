@@ -7,4 +7,4 @@
 - [x] Singleton cache manager
 - [x] Extension UIImageView with last url to avoid false loading
 - [ ] Independent extension namespace for UIImageView
-- [ ] Integrated RealmSwift as the persistence storage
+- [x] Integrated RealmSwift as the persistence storage
