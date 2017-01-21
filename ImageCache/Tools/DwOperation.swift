@@ -17,6 +17,12 @@ class DwOperation: Operation {
     
     // MARK: - func for running
     override func main() -> Void {
+        
+        // if cancelled itself
+        if (self.isCancelled) {
+            return
+        }
+        
         guard
             let validUrlStr = urlStr,
             let validUrl = URL(string: validUrlStr as String)
@@ -28,6 +34,7 @@ class DwOperation: Operation {
             return
         }
         // tring to download the data and transfer to UIImage
+        // TODO: URLSession
         if let data = try? Data(contentsOf: validUrl),
             let newImage = UIImage(data: data) {
             self.downloadedImage = newImage
