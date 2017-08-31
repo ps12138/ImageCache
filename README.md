@@ -8,4 +8,4 @@
 - [x] Extension UIImageView with last url to avoid false loading
 - [x] Extension namespace for UIImageView
 - [x] Integrated RealmSwift as the persistence storage
-- [ ] InDisk LRU
+
